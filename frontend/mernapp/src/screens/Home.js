@@ -13,7 +13,7 @@ const Home = () => {
 
   const loadData = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/foodItems", {
+      let response = await fetch("https://gofood-delivery-app-backend.onrender.com/api/foodItems", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
