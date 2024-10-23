@@ -1,0 +1,120 @@
+/* Background styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('D:\GoFood-Food-Delivery-App\frontend\mernapp\public\greenbg.avif') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+}
+.login-container .icon {
+    position: absolute;
+    top: -40px;
+    transform: translateX(-50%);
+    background-color: #181414;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-image: url('D:\GoFood-Food-Delivery-App\frontend\mernapp\public\app_icon.webp'); /* Replace with the correct path */
+    background-size: 80px 70px;
+    width: 80px;  /* Adjust the width and height */
+    height: 80px;
+    opacity: 100%;
+}
+
+/* Centering the card on the screen */
+.login-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styling */
+.login-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Icon container */
+.login-card .icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #181414;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input and button styling */
+.login-card input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #282828;
+    color: white;
+    border-radius: 5px;
+}
+
+.login-card input:focus {
+    outline: none;
+}
+
+.login-card button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 12px;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+    background-color: #45a049;
+}
+
+/* Remember Me and Forgot Password link styling */
+/* Remember Me and Forgot Password link styling */
+.login-card .form-check {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the start */
+    align-items: center;  /* Vertically align checkbox and label */
+    color: white;
+    font-size: 1rem;
+    gap: 5px;  /* Add a small gap between checkbox and text */
+}
+
+.login-card .checkbox {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: 0px;  /* Space between the checkbox and the "Remember me" label */
+}
+
+.login-card .form-check a {
+    margin-left: auto;  /* Push the "Forgot Password" link to the right */
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Text styling */
+.login-card label {
+    color: white;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 400px) {
+    .login-card {
+        width: 90%;
+    }
+}
