@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-const { MONGO_URL } = require("../frontend/mernapp/src/config");
+// const { MONGO_URL } = require("../frontend/mernapp/src/config");
+require('dotenv').config();
 
 // Define the MongoDB connection URL
-const mongoURL = MONGO_URL;
+const mongoURL = process.env.MONGO_URL;
 
 // Set up MongoDB connection
 mongoose.connect(mongoURL, {
